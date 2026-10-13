@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PitNova — Inscription</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <div class="nav">
+    <a href="index.html" class="nav-logo">Pit<span>Nova</span></a>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="register.html" class="active">Inscription</a></li>
+      <li><a href="login.html">Connexion</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="booking.html" class="btn-cta">Réserver</a>
+  </div>
+
+  <!-- FORMULAIRE INSCRIPTION -->
+  <div class="form-section">
+    <div class="form-box">
+      <h2>Créer un compte</h2>
+      <p class="sub">Rejoignez PitNova et réservez vos services facilement</p>
+
+      <form action="php/register_db.php" method="POST">
+
+        <div class="form-row">
+          <div class="form-group">
+            <p>Nom</p>
+            <input type="text" name="nom" placeholder="Alami" required>
+          </div>
+          <div class="form-group">
+            <p>Prénom</p>
+            <input type="text" name="prenom" placeholder="Mohamed" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <p>Adresse email</p>
+          <input type="email" name="email" placeholder="votre@email.com" required>
+        </div>
+
+        <div class="form-group">
+          <p>Téléphone</p>
+          <input type="tel" name="telephone" placeholder="+212 6 00 00 00 00" required>
+        </div>
+
+        <div class="form-group">
+          <p>Mot de passe</p>
+          <input type="password" name="password" placeholder="••••••••" required>
+        </div>
+
+        <div class="form-group">
+          <p>Confirmer le mot de passe</p>
+          <input type="password" name="confirm" placeholder="••••••••" required>
+        </div>
+
+        <input type="submit" class="btn-full" value="Créer mon compte">
+
+      </form>
+
+      <p class="form-link">Déjà inscrit ? <a href="login.html">Se connecter</a></p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <div class="footer-col">
+      <h4>Pit<span style="color:#FF6B35;">Nova</span></h4>
+      <p>Fast help. Smart service.<br>Votre partenaire auto à domicile.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <a href="index.html">Accueil</a>
+      <a href="services.html">Services</a>
+      <a href="booking.html">Réservation</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <a href="#">contact@pitnova.ma</a>
+      <a href="#">+212 6 00 00 00 00</a>
+      <a href="#">Casablanca, Maroc</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 PitNova. Tous droits réservés.</span>
+    <span>Fast Help. Smart Service.</span>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
